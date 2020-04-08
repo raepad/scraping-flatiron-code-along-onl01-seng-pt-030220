@@ -18,7 +18,9 @@ class Scraper
   end
   
   #this is the return value of the .get_page method 
-  
+  def get_courses
+    self.get_page.css(".post")
+  end
   
   def print_courses
     self.make_courses
