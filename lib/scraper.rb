@@ -17,6 +17,9 @@ class Scraper
     # end
   end
   
+  #this is the return value of the .get_page method 
+  
+  
   def print_courses
     self.make_courses
     Course.all.each do |course|
